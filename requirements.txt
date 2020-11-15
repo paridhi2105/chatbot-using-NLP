@@ -92,7 +92,6 @@ jupyterlab-server==1.0.6
 Keras-Preprocessing==1.1.2
 keyring==18.0.0
 Kivy==1.11.1
-kivy-deps.sdl2==0.2.0
 kiwisolver==1.1.0
 lazy-object-proxy==1.4.2
 libarchive-c==2.8
