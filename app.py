@@ -2,6 +2,7 @@ import nltk
 nltk.download('punkt')
 from nltk.stem.lancaster import LancasterStemmer
 stemmer = LancasterStemmer()
+
 import numpy
 import tensorflow.compat.v1 as tf
 import tflearn
@@ -9,6 +10,7 @@ import random
 import json
 import pickle
 from flask import Flask,render_template,request
+
 global model,words,labels,data
 
 app = Flask(__name__) 
@@ -37,7 +39,6 @@ def mlmodel():
                 words.extend(wrds)
                 docs_x.append(wrds)
                 docs_y.append(intent["tag"])
-    
             if intent["tag"] not in labels:
                 labels.append(intent["tag"])
     
@@ -53,22 +54,17 @@ def mlmodel():
     
         for x, doc in enumerate(docs_x):
             bag = []
-    
             wrds = [stemmer.stem(w.lower()) for w in doc]
-    
             for w in words:
                 if w in wrds:
                     bag.append(1)
                 else:
                     bag.append(0)
-    
             output_row = out_empty[:]
             output_row[labels.index(docs_y[x])] = 1
-    
             training.append(bag)
             output.append(output_row)
-    
-    
+   
         training = numpy.array(training)
         output = numpy.array(output)
     
@@ -90,7 +86,7 @@ def mlmodel():
     except:
         model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
         model.save("model.tflearn")
-
+     
         
 def bag_of_words(s, words):
     bag = [0 for _ in range(len(words))]
@@ -108,8 +104,10 @@ def bag_of_words(s, words):
 @app.route('/get')
 def get_bot_response():
     userText = request.args.get("msg")
+    
     if userText.lower() == "quit":
         exit()
+    
     global model,words,labels,data
     results = model.predict([bag_of_words(userText, words)])
     results_index = numpy.argmax(results)
@@ -117,9 +115,11 @@ def get_bot_response():
     for tg in data["intents"]:
         if tg['tag'] == tag:
             responses = tg['responses']
+    
     return str(random.choice(responses))
 
 
 if __name__ == '__main__':
     mlmodel()
+    
     app.run()
