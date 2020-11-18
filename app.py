@@ -21,7 +21,7 @@ def index():
 
 def mlmodel():
     global words,model,labels,data
-    with open("C:\\Users\\user\\OneDrive\\Desktop\\nlp_bot\\intents.json",encoding='utf-8') as file:
+    with open("intents.json",encoding='utf-8') as file:
         data = json.load(file)
     try:
         with open("data.pickle", "rb") as f:
