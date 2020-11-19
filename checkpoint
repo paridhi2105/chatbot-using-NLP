@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/jak/Desktop/chatbot-using-NLP/model.tflearn"
+all_model_checkpoint_paths: "/home/jak/Desktop/chatbot-using-NLP/model.tflearn"

@@ -85,12 +85,12 @@ net = tflearn.regression(net)
 
 model = tflearn.DNN(net)
 
-path = "model.tflearn"
+path = "./model.tflearn.index"
 if os.path.isfile(path):
-    model.load(path)
+    model.load('./model.tflearn',weights_only=True)
 else:
-    model.fit(training, output, n_epoch=100, batch_size=8, show_metric=False)
-    model.save(path)
+    model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=False)
+    model.save('./model.tflearn')
 
 
 @app.route('/')
