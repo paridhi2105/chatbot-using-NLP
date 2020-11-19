@@ -89,7 +89,7 @@ path = "model.tflearn"
 if os.path.isfile(path):
     model.load(path)
 else:
-    model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=False)
+    model.fit(training, output, n_epoch=100, batch_size=8, show_metric=False)
     model.save(path)
 
 
