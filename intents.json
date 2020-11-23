@@ -31,7 +31,7 @@
         },
         {"tag": "name",
          "patterns": ["what is your name", "what should I call you", "whats your name?","your name?","Do you know my name?"],
-         "responses": ["Hey, you can call me Rachelle.", "I'm Rachelle!", "I'm Rachelle, and you?.","Rachelle here."],
+         "responses": ["Hey, you can call me Rachelle.", "I'm Rachelle!", "I'm Rachelle, nice to meet you.","Rachelle here."],
          "context_set": ""
         },
         {"tag": "thanks",
@@ -55,8 +55,8 @@
          "context_set": ""
         },
         {"tag": "heaser",
-         "patterns": ["what is this platform","how to use heaser","what features are there","what is HeaseR"],
-         "responses": ["Heaser is the easiest and most user-friendly platform to use.", "Heaser provides task allocation,work time analysis,leave management,stress management, and me of course!", "Heaser has various features-Task allocation; Working time analysis; Training section; Dashboard; Stress Management; Leave Management; HR Assistant(me 😁); Discussion Forum and Announcements","Video link for features explanation -> <a href='https://www.youtube.com/watch?v=nPZ3sDj20eQ&feature=youtu.be'>Click</a>"],
+         "patterns": ["what is this platform","how to use heaser","what features are there","what is heaser"],
+         "responses": ["Heaser is the easiest and most user-friendly platform to use.", "Heaser provides task allocation,work time analysis,leave management,stress management, and me of course!", "Heaser has various features-Task allocation; Working time analysis; Training section; Dashboard; Stress Management; Leave Management; HR Assistant(me 😁); Discussion Forum and Announcements","Video link for features explanation -> https://www.youtube.com/watch?v=nPZ3sDj20eQ&feature=youtu.be"],
          "context_set": ""
         },
         {"tag": "use",
@@ -122,6 +122,16 @@
 	{"tag": "unfair_means",
          "patterns": ["I have a complaint", "Where can I file a complaint","I am being harassed","I want help","I am facing discrimination","I am being bullied","Report","Harassment case"],
          "responses": ["Contact HR right now","Dont worry, report directly to the HR","HR will be addressing this issue."],
+         "context_set": ""
+        },
+        {"tag": "games",
+         "patterns": ["I want to play games", "lets play a game","game?","can we play a game","suggest me some games","will you play a game","suggest me a game","tell me games to play"],
+         "responses": ["Lets play Tic-tac-toe https://www.arkadium.com/games/tic-tac-toe/","https://www.chess.com/","You will love Fortnite https://www.epicgames.com/fortnite/en-US/home"],
+         "context_set": ""
+        },
+        {"tag": "music",
+         "patterns": ["i have a headache", "suggest me some music","i want to listen to music","stress-relieving music","i want to hear music","sing a song","i want to hear songs","songs or music"],
+         "responses": ["This is my favourite--> https://www.youtube.com/watch?v=hlWiI4xVXKY","Relive your childhood (Disney piano collection) https://www.youtube.com/watch?v=GBexfwe-9j0","I found a great playlist for you: https://www.youtube.com/watch?v=7wfYIMyS_dI&list=PLo3pNg0eiPc9hsnjWTTM4PVTKrmGaXOQ1"],
          "context_set": ""
         }
    ]
