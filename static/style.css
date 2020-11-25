@@ -1,3 +1,7 @@
+html {
+    overflow:none;
+}
+
 body {
     font-family: Garamond;
     width: 100%;
@@ -19,6 +23,7 @@ h3 {
 #userInput {
     width: 100%;
     margin-top: 20px;
+    text-align: center;
 }
 
 #textInput {
@@ -26,7 +31,8 @@ h3 {
     border: none;
     border-bottom: 3px solid #3e98c7;
     font-family: monospace;
-    font-size: 17px;
+    font-size: 20px;
+    outline: none;
 }
 
 #buttonInput {
@@ -45,6 +51,7 @@ h3 {
     font-size: 17px;
     text-align: right;
     line-height: 30px;
+    margin-right:10px;
 }
 
 .userText span {
@@ -59,6 +66,7 @@ h3 {
     font-size: 17px;
     text-align: left;
     line-height: 30px;
+    margin-left:10px;
 }
 
 .botText span {
