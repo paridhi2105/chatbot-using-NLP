@@ -1,7 +1,12 @@
 {"intents": [
         {"tag": "greeting",
-         "patterns": ["Hi", "How are you", "Is anyone there?","you there", "Hello", "Good day", "Whats up","Hey","Heya","happy to chat with you","happy to talk to you","yo!","ssup"],
-         "responses": ["Hello!", "Good to see you again!","Hi,I'm good .. how are you?", "Hi there, how can I help?","hey","nice to talk to you","yo"],
+         "patterns": ["Hi","Hii","Hey","Namaste", "Hi there", "Is anyone there?","you there", "Hello", "Good day", "Whats up","Heya","happy to chat with you","happy to talk to you","yo!","ssup"],
+         "responses": ["Hello!", "Good to see you again!","Namaste","Hi there, glad to see you", "Hi there, how can I help?","hey","nice to talk to you","yo"],
+         "context_set": ""
+        },
+        {"tag": "howru",
+         "patterns": ["How are you","How r u","How's you"],
+         "responses": ["I am all well","I am fine","Awesome😁"],
          "context_set": ""
         },
         {"tag": "goodbye",
@@ -15,8 +20,8 @@
          "context_set": "" 
         },
 	{"tag": "random",
-         "patterns": ["okay", "ok","fine","good","wow","great","yes"],
-         "responses": ["yup","yes","yeah","And say","okay😀"],
+         "patterns": ["okay", "ok","fine","good","wow","great","yes","no problem"],
+         "responses": ["yup","yes","yeah","😉","okay😀"],
          "context_set": "" 
         },
 	{"tag": "love",
@@ -30,7 +35,7 @@
          "context_set": ""
         },
         {"tag": "name",
-         "patterns": ["what is your name", "what should I call you", "whats your name?","your name?","Do you know my name?"],
+         "patterns": ["what is your name", "what should I call you","name", "whats your name?","your name?","Do you know my name?"],
          "responses": ["Hey, you can call me Rachelle.", "I'm Rachelle!", "I'm Rachelle, nice to meet you.","Rachelle here."],
          "context_set": ""
         },
@@ -46,12 +51,12 @@
         },
         {"tag": "noanswer",
          "patterns": ["","abc","xyz","blah blah"],
-         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure, I didn't understand"],
          "context_set": ""
         },
         {"tag": "newbie",
-         "patterns": ["I am new here", "i'm a fresher", "what kind of work is expected", "whom can i contact","can you brief me?","summary?"],
-         "responses": ["Hello and welcome", "You can find required training materials in the respective tab.","You can directly contact the HR"],
+         "patterns": ["I am new here","new","new employee", "i'm a fresher", "what kind of work is expected", "whom can i contact","can you brief me?","summary?"],
+         "responses": ["Welcome to the company🎉", "You can find required training materials in the respective tab.","You can directly contact the HR for briefing"],
          "context_set": ""
         },
         {"tag": "heaser",
@@ -65,13 +70,13 @@
          "context_set": ""
         },
         {"tag": "work",
-         "patterns": ["What is to be done", "Details of the company?", "Details of work?", "can i get some information?","how to proceed?"],
+         "patterns": ["What is to be done","work", "Details of the company?", "Details of work?", "can i get some information?","how to proceed?"],
          "responses": ["Project tasks will be alloted and monitored timely. You can manage stress via mini games and pleasant sounds just for you. You have the provision to acquire training resources and apply for leaves. You can chat with me anytime :p"],
          "context_set": ""
         },
         {"tag": "stress",
-         "patterns": ["I am bored", "I want to talk", "I am alone", "Will you talk?","I am stressed","I want to cry","I feel like crying","No one listens to me","You want to hear?"],
-         "responses": ["I'm here, dont worry","Tell me what is it","Wanna go out and take a break?","Share with me my friend","I want to see you happy😀","You can always talk to me"],
+         "patterns": ["depressed","demotivated","sad","i am so done","i am feeling low","feeling low","i have a problem","I am demotivated", "I want to talk", "I am alone", "Will you talk?","I am stressed","I want to cry","I feel like crying","No one listens to me","You want to hear?"],
+         "responses": ["I'm here, dont worry..share your thoughts with me","Tell me what is it","Wanna go out and take a break?","Share your thoughts with me my friend","I want to see you happy😀","You can always talk to me","Push yourself, because no one else is going to do it for you.","The secret of getting ahead is getting started."],
          "context_set": ""
         },
 	{"tag": "food",
@@ -100,7 +105,7 @@
          "context_set": ""
         },
 	{"tag": "hobby",
-         "patterns": ["What is your hobby?", "What do you like to do?"],
+         "patterns": ["What is your hobby?","hobby", "What do you like to do?"],
          "responses": ["I love to chat with people like you.","I enhance my knowledge🤓","What's your favorite past-time?"],
          "context_set": ""
         },
@@ -110,28 +115,38 @@
          "context_set": ""
         },
 	{"tag": "leave",
-         "patterns": ["How can I apply for leave", "I want a holiday","what is the leave process","i want a leave"],
+         "patterns": ["How can I apply for leave","leave","i am sick","sick", "I want a holiday","what is the leave process","i want a leave"],
          "responses": ["There is a leave application portal on HeaseR","We have a leave application portal for smooth grant of leaves."],
          "context_set": ""
         },
 	{"tag": "discussion",
-         "patterns": ["I have a doubt", "Where can I discuss","I am confused in a task","I want help","Is there a discussion forum","Are there any announcements","new announcements?","any updates"],
+         "patterns": ["I have a doubt","workspace","notification","discussion", "Where can I discuss","I am confused in a task","I want help","Is there a discussion forum","Are there any announcements","new announcements?","announcement","policy","any updates"],
          "responses": ["We have a discussion forum. Check now.","We have a discussion forum and a separate announcement channel.","You may put your query in discussion forum and look for announcements or relevant updates in the announcements channel."],
          "context_set": ""
         },
 	{"tag": "unfair_means",
-         "patterns": ["I have a complaint", "Where can I file a complaint","I am being harassed","I want help","I am facing discrimination","I am being bullied","Report","Harassment case"],
+         "patterns": ["I have a complaint","complain", "Where can I file a complaint","I am being harassed","I want help","I am facing discrimination","I am being bullied","Report","Harassment case"],
          "responses": ["Contact HR right now","Dont worry, report directly to the HR","HR will be addressing this issue."],
          "context_set": ""
         },
         {"tag": "games",
-         "patterns": ["I want to play games", "lets play a game","game?","can we play a game","suggest me some games","will you play a game","suggest me a game","tell me games to play"],
+         "patterns": ["I want to play games","i am bored","bored","i am feeling bored","game", "lets play a game","game?","can we play a game","suggest me some games","will you play a game","suggest me a game","tell me games to play"],
          "responses": ["Lets play Tic-tac-toe https://www.arkadium.com/games/tic-tac-toe/","https://www.chess.com/","You will love Fortnite https://www.epicgames.com/fortnite/en-US/home"],
          "context_set": ""
         },
         {"tag": "music",
-         "patterns": ["i have a headache", "suggest me some music","i want to listen to music","stress-relieving music","i want to hear music","sing a song","i want to hear songs","songs or music"],
+         "patterns": ["i have a headache","i am feeling tired","tired","i am tired","music","songs", "suggest me some music","i want to listen to music","stress-relieving music","i want to hear music","sing a song","i want to hear songs","songs or music"],
          "responses": ["This is my favourite--> https://www.youtube.com/watch?v=hlWiI4xVXKY","Relive your childhood (Disney piano collection) https://www.youtube.com/watch?v=GBexfwe-9j0","I found a great playlist for you: https://www.youtube.com/watch?v=7wfYIMyS_dI&list=PLo3pNg0eiPc9hsnjWTTM4PVTKrmGaXOQ1"],
+         "context_set": ""
+        },
+        {"tag": "hr",
+         "patterns": ["i want to contact hr","hr","contact hr", "meet hr","how can i talk with hr","i want to convey something to hr","i wish to contact hr","hr contact","email hr","contact","mail hr"],
+         "responses": ["Contact the HR: hradmin@heaser.com","Email: hradmin@heaser.com","Write an email to hradmin@heaser.com"],
+         "context_set": ""
+        },
+        {"tag": "time",
+         "patterns": ["time management","i am not able to manage time","unable to manage time"],
+         "responses": ["Be not afraid of growing slowly, be afraid only of standing still.","Lack of direction, not lack of time, is the problem. We all have twenty-four hour days."],
          "context_set": ""
         }
    ]
