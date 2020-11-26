@@ -1,2 +1,2 @@
-model_checkpoint_path: "/home/jak/Desktop/chatbot-using-NLP/model.tflearn"
-all_model_checkpoint_paths: "/home/jak/Desktop/chatbot-using-NLP/model.tflearn"
+model_checkpoint_path: "C:\\Users\\user\\OneDrive\\Desktop\\nlp_bot\\model.tflearn"
+all_model_checkpoint_paths: "C:\\Users\\user\\OneDrive\\Desktop\\nlp_bot\\model.tflearn"
